@@ -1,0 +1,21 @@
+#Calculadora de soma
+
+#Crie um script que peça ao usuário para inserir dois números e some-os continuamente até que o usuário insira "sair" para terminar o programa.
+
+
+
+
+#!/bin/bash
+
+
+while [ "$saida" != sair ]
+do
+        read -p "Digite um número: " num1
+        read -p "Digite outro número: " num2
+
+        somanum=$[ $num1 + $num2 ]
+
+        echo " O resultado da soma é: $somanum "
+
+        read -p "Para somar novamente, digite qualquer coisa. Para finalizar, digite 'sair' " saida
+done
